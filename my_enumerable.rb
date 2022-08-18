@@ -36,7 +36,7 @@ module MyEnumerable
       each { |e| if yield(e) then result.push(e) end}
       print result
     else
-      puts "Enumerator"
+      puts self
     end
   end
 end

@@ -13,4 +13,4 @@ class List
 end
 
 Mylist = List.new(:foo, :bar)
-Mylist.filter
+puts Mylist.filter
