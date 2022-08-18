@@ -13,11 +13,3 @@ class List
 end
 
 Mylist = List.new(1,2,3,4)
-
-Mylist.all? {|e| e < 5}
-
-Mylist.all? {|e| e > 5}
-
-Mylist.any? {|e| e == 2}
-
-Mylist.any? {|e| e == 5}
