@@ -17,13 +17,17 @@ module MyEnumerable
   end
 
   def any?
-    result = []
-    each {|e| result.push(yield(e))}
-    # puts result
-    if result.include?(true)
+      if block_given?
+      result = []
+      each {|e| result.push(yield(e))}
+      # puts result
+      if result.include?(true)
+        puts 'true'
+      else
+        puts 'false'
+      end
+    else 
       puts 'true'
-    else
-      puts 'false'
     end
   end
 end
