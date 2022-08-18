@@ -9,4 +9,15 @@ module MyEnumerable
       puts 'true'
     end
   end
+
+  def any?
+    result = []
+    each {|e| result.push(yield(e))}
+    # puts result
+    if result.include?(true)
+      puts 'true'
+    else
+      puts 'false'
+    end
+  end
 end
