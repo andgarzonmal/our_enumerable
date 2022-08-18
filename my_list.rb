@@ -12,4 +12,5 @@ class List
   end
 end
 
-Mylist = List.new(1, 2, 3, 4)
+Mylist = List.new(:foo, :bar)
+Mylist.filter

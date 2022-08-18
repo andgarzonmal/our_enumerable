@@ -29,4 +29,14 @@ module MyEnumerable
       puts 'true'
     end
   end
+
+  def filter
+    if block_given?
+      result = []
+      each { |e| if yield(e) then result.push(e) end}
+      print result
+    else
+      puts "Enumerator"
+    end
+  end
 end
