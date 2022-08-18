@@ -11,6 +11,3 @@ class List
     @list.each(&block)
   end
 end
-
-Mylist = List.new(:foo, :bar)
-puts Mylist.filter

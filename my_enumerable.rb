@@ -33,7 +33,7 @@ module MyEnumerable
   def filter
     if block_given?
       result = []
-      each { |e| if yield(e) then result.push(e) end}
+      each { |e| result.push(e) if yield(e) }
       print result
     else
       puts self
