@@ -12,6 +12,8 @@ class List
   end
 end
 
-Mylist = List.new(1,2,3,4,5)
+Mylist = List.new(1,2,3,4)
 
 Mylist.all? {|e| e < 5}
+
+Mylist.all? {|e| e > 5}
