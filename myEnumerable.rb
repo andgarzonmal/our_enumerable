@@ -3,7 +3,7 @@ module MyEnumerable
     result = []
     each {|e| result.push(yield(e))}
     # puts result
-    if result.include?('false')
+    if result.include?(false)
       puts 'false'
     else
       puts 'true'
