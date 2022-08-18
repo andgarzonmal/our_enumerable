@@ -13,5 +13,3 @@ class List
 end
 
 Mylist = List.new(1,2,3,4,5)
-
-Mylist.all? {|e| e < 5}
