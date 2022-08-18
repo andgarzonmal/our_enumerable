@@ -1,8 +1,8 @@
-module MyEnumerable 
+module MyEnumerable
   def all?
     if block_given?
       result = []
-      each {|e| result.push(yield(e))}
+      each { |e| result.push(yield(e)) }
       # puts result
       if result.include?(false)
         puts 'false'
@@ -11,22 +11,21 @@ module MyEnumerable
       end
 
     else
-      puts "true"
+      puts 'true'
     end
-
   end
 
   def any?
-      if block_given?
+    if block_given?
       result = []
-      each {|e| result.push(yield(e))}
+      each { |e| result.push(yield(e)) }
       # puts result
       if result.include?(true)
         puts 'true'
       else
         puts 'false'
       end
-    else 
+    else
       puts 'true'
     end
   end
