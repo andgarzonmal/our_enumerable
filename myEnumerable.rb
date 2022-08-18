@@ -1,5 +1,5 @@
 module MyEnumerable 
   def all?
-    yield(e)
+    each {|e| yield(e)}
   end
 end

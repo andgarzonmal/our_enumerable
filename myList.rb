@@ -12,6 +12,6 @@ class List
   end
 end
 
-Mylist = List.new(1,2,3,4,5)#=>array 
+Mylist = List.new(1,2,3,4,5)
 
-puts Mylist.all? {|e| puts e+2}
+Mylist.all? {|e| puts e + 2}
