@@ -11,3 +11,7 @@ class List
     @list.each(&block)
   end
 end
+
+
+list = List.new(1,2,3,4)
+list.all?{|e| e < 5}

@@ -2,8 +2,8 @@ module MyEnumerable
   def all?
     if block_given?
       result = []
-      each { |e| result.push(yield(e)) + 1 }
-      # puts result
+      each { |e| result.push(e)}
+      #puts result
       if result.include?(false)
         puts 'false'
       else
