@@ -2,7 +2,7 @@ module MyEnumerable
   def all?
     if block_given?
       result = []
-      each { |e| result.push(yield(e)) }
+      each { |e| result.push(yield(e)) + 1 }
       # puts result
       if result.include?(false)
         puts 'false'
@@ -19,7 +19,7 @@ module MyEnumerable
     if block_given?
       result = []
       each { |e| result.push(yield(e)) }
-      # puts result
+        puts result
       if result.include?(true)
         puts 'true'
       else
